@@ -1,6 +1,12 @@
+---
+title: 项目介绍
+---
+
 import { Meta } from "@storybook/blocks";
 
 <Meta title="项目介绍" />
+
+## 基本介绍
 
 本项目是一次 `Monorepo` 结合 `storybook` 的项目管理方法
 
@@ -11,3 +17,30 @@ import { Meta } from "@storybook/blocks";
 |-->packages 一堆自己写的包
 
 |-->一些其他的配置信息
+
+## 例子
+
+如本文，建立了一个 button 的组件库，隶属于 `@couriourc/packages`
+
+```vue
+import "@couriourc/button";
+```
+
+通过这样的方式来进行 `storybook` 的真实测试，进一步可以结合 hexo 的 meta 信息配置，和代码样例转换，实现 markdown to mdx 的转换
+从而达到适配博客的写法，实现库介绍 blogify
+
+```markdown
+---
+title: "项目介绍"
+---
+```
+
+<div style={{ textAlign: "center" }}>↓</div>
+
+```mdx
+<Meta title="项目介绍" />
+```
+
+## 进一步
+
+借助 `Monorepo` 的便利性，实现 Auto Imports 从而简化繁多的 import

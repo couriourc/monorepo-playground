@@ -4,7 +4,6 @@ importers:
 
   .:
     specifiers:
-      '@couriourc/components': workspace:^0.0.0
       '@storybook/addon-essentials': 7.0.20
       '@storybook/addon-interactions': 7.0.20
       '@storybook/addon-links': 7.0.20
@@ -25,7 +24,6 @@ importers:
       vitest: ^0.32.0
       vue: ^3.2.47
     devDependencies:
-      '@couriourc/components': link:packages/components
       '@storybook/addon-essentials': 7.0.20_biqbaboplfbrettd7655fr4n2y
       '@storybook/addon-interactions': 7.0.20_biqbaboplfbrettd7655fr4n2y
       '@storybook/addon-links': 7.0.20_biqbaboplfbrettd7655fr4n2y

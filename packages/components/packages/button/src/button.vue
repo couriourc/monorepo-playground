@@ -1,8 +1,9 @@
 <template>
     <button class="element" :class="{
-        primary,
+        [type]: !!type,
     }">
-        <slot></slot>
+        <slot v-if="!$slots.default"></slot>
+        <span v-else>默认文本</span>
     </button>
 </template>
 
@@ -10,18 +11,42 @@
 import { ref } from "vue";
 
 defineProps({
-    primary: {
-        type: Boolean,
+    size: {
+        type: String,
+        default: () => ''
+    },
+    type: {
+        type: String,
+        default: () => 'primary'
     },
 });
-const msg = ref();
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .element {
-    background-color: antiquewhite;
+    border-radius: 2px;
+    border: none;
+    padding: 2px 12px;
+    color: #FFF;
+    cursor: pointer;
+}
 
-    div {
-        background-image: none;
+.element.primary {
+
+    background-color: #26f;
+
+    &:hover {
+        background-color: rgb(28, 80, 201);
+    }
+}
+
+.element.plain {
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid;
+    outline: none;
+
+    &:hover {
+        background-color: #eee;
     }
 }
 </style>
