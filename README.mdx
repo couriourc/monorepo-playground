@@ -1,10 +1,8 @@
----
-title: 项目介绍
----
-
 import { Meta } from "@storybook/blocks";
 
-<Meta title="项目介绍" />
+import "uno.css";
+
+{<Meta title="项目介绍" />}
 
 ## 基本介绍
 
@@ -35,7 +33,7 @@ title: "项目介绍"
 ---
 ```
 
-<div style={{ textAlign: "center" }}>↓</div>
+{<div class={"text-center"}>↓</div>}
 
 ```mdx
 <Meta title="项目介绍" />
@@ -43,4 +41,31 @@ title: "项目介绍"
 
 ## 进一步
 
-借助 `Monorepo` 的便利性，实现 Auto Imports 从而简化繁多的 import
+借助 `Monorepo` 的便利性,实现 Auto Imports 从而简化繁多的 import,配合 JSDoc StyleGuids 简化项目文档的复写,并自动生成可用的一套组件库.
+若是能打通 Figma 也是一个不错的 Idea
+
+## 用途
+
+1. 一个简易的前端测试平台
+
+   基于 Storybook 交互式效果拉满，利用 netlify 发布，分享成就两不误。
+
+2. 项目沉淀（文档、kitify、规范化）
+
+   在形成自己的组件库时，可以利用 Jsdoc 或 Tsdoc 等工具，生成对应的文档，并且能够实现交互式。
+
+3. Monorepo
+
+   一键发布 npm，成长，开发两不误。
+
+## 目前正在做：
+
+[1]. 优化 markdown 的写法，制定一套更加自然过渡的语法。
+
+[2]. JSDoc(JS Vue Ts)转译自动生成 storybook 交互式的文档。
+
+[3]. 优化 storybook 与仓库的强关联，做到弱关联。
+
+[4]. 集成优化测试平台和 DevOps。
+
+[5]. 一些额外的插件打通

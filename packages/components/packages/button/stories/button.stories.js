@@ -11,7 +11,9 @@ export default {
             },
             options: ['primary', 'plain'],
         },
-        onClick: {},
+        onClick: {
+
+        },
         size: {
             control: {
                 type: 'select',
