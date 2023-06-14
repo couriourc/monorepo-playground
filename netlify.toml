@@ -1,0 +1,5 @@
+
+[build]
+base = "/"
+publish = "storybook-static"
+command = "npx pnpm i && npx pnpm build-storybook"

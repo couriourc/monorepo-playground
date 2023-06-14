@@ -1,0 +1,42 @@
+{
+  "name": "compiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node index",
+    "test:dev": "vitest -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@couriourc/components": "workspace:^0.0.0",
+    "@storybook/addon-essentials": "7.0.20",
+    "@storybook/addon-interactions": "7.0.20",
+    "@storybook/addon-links": "7.0.20",
+    "@storybook/blocks": "7.0.20",
+    "@storybook/testing-library": "0.0.14-next.2",
+    "@storybook/vue": "7.0.20",
+    "@storybook/vue-vite": "7.0.20",
+    "@storybook/vue3": "7.1.0-alpha.33",
+    "@storybook/vue3-vite": "7.1.0-alpha.33",
+    "@vue/test-utils": "^2.3.2",
+    "jest": "^29.5.0",
+    "jsdom": "^22.1.0",
+    "lerna": "^6.6.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "7.0.20",
+    "vite": "^4.3.9",
+    "vitest": "^0.32.0",
+    "vue": "^3.2.47"
+  },
+  "workspaces": [
+    "packages/**"
+  ]
+}

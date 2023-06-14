@@ -1,0 +1,24 @@
+{
+    "name": "@couriourc/components",
+    "version": "0.0.0",
+    "description": "couriourc components",
+    "author": "couriourc <3234853521@qq.com>",
+    "homepage": "",
+    "license": "ISC",
+    "main": "index.js",
+    "type": "module",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib"
+    ],
+    "publishConfig": {
+        "registry": "https://r.cnpmjs.org/"
+    },
+    "scripts": {},
+    "dependencies": {
+        "@couriourc-components/button": "workspace:^1.0.0"
+    }
+}
