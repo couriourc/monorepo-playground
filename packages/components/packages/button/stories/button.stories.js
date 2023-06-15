@@ -1,15 +1,15 @@
-import MyButton from '../src/button.vue';
+import CoButton from '../src/button.vue';
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 export default {
-    title: 'Example/Button',
-    component: MyButton,
+    title: 'CouriourC/Button',
+    component: CoButton,
     tags: ['autodocs'],
     argTypes: {
         type: {
             control: {
                 type: 'select',
             },
-            options: ['primary', 'plain'],
+            options: ['primary', 'line', 'lines'],
         },
         onClick: {
 
@@ -18,8 +18,14 @@ export default {
             control: {
                 type: 'select',
             },
-            options: ['small', 'medium', 'large'],
+            options: ['sm', 'lg', 'block'],
         },
+        round: {
+            control: {
+                type: 'boolean'
+            },
+
+        }
     },
 };
 
@@ -31,22 +37,23 @@ export const Primary = {
     },
 };
 
-export const Secondary = {
+export const Round = {
     args: {
-        label: 'Button',
+        label: '',
+        round: true
     },
 };
-
-export const Large = {
-    args: {
-        size: 'large',
-        label: 'Button',
-    },
-};
-
 export const Small = {
     args: {
-        size: 'small',
+        size: 'sm',
         label: 'Button',
     },
 };
+export const Large = {
+    args: {
+        size: 'lg',
+        label: 'Button',
+    },
+};
+
+

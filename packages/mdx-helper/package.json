@@ -1,0 +1,36 @@
+{
+  "name": "@couriourc/mdx-helper",
+  "version": "0.0.0",
+  "description": "mdx-helper",
+  "keywords": [
+    "mdx",
+    "md"
+  ],
+  "author": "couriourc <3234853521@qq.com>",
+  "homepage": "https://couriourc-monorepo.netlify.app",
+  "license": "ISC",
+  "main": "lib/mdx-helper.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/couriourc/monorepo-playground.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@couriourc/mdx-helper.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/couriourc/monorepo-playground/issues"
+  },
+  "dependencies": {
+    "markdown-it": "^13.0.1"
+  }
+}
